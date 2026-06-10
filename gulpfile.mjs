@@ -189,5 +189,5 @@ const dockerClean = gulp.series(dockerStop, dockerRemoveContainer, dockerRemoveI
 // Define complex tasks
 const build = gulp.series(clean, gulp.parallel(styles, scripts, copyOther, replaceUrls, copyData, copyImages, copyDockerfile), npmInstall);
 const docker = gulp.series(build, dockerBuild, dockerRun);
-// Export tasks 1
+// Export tasks
 export { clean, styles, scripts, copyOther, replaceUrls, copyData, copyImages, copyDockerfile, npmInstall, build, dockerBuild, dockerRun, dockerStop, dockerRemoveContainer, dockerRemoveImage, dockerClean, docker, build as default };

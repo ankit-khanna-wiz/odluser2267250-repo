@@ -7,10 +7,10 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install dependencies
+# Install dependencies retgt
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the rest of the application code asdrgr
 COPY . .
 
 # Create a non-root user and group
